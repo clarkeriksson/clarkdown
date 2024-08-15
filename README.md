@@ -1,4 +1,4 @@
-HEADERS
+Headers
 ------------------------
 
     # Heading Level 1
@@ -29,7 +29,7 @@ HEADERS
 
 
 
-PARAGRAPHS
+Paragraphs
 ------------------------
 
     Paragraphs are designated by raw text
@@ -42,7 +42,7 @@ PARAGRAPHS
 
 
 
-LINE BREAKS
+Line Breaks
 ------------------------
 
     To make a line break include two spaces after a line like so__
@@ -55,7 +55,7 @@ LINE BREAKS
 
 
 
-EMPHASIS
+Emphasis
 ------------------------
 
     Bold text is indicated by **double asterisks** or __double underlines__
@@ -74,7 +74,7 @@ EMPHASIS
 
 
 
-BLOCKQUOTES
+Blockquotes
 ------------------------
 
     > Blockquotes are indicated using this character at the start of a line
@@ -109,7 +109,7 @@ BLOCKQUOTES
 
 
 
-LISTS
+Lists
 ------------------------
 
     1. Ordered lists are created using line items with numbers followed by periods
@@ -156,7 +156,7 @@ LISTS
 
 
 
-CODE BLOCKS
+Code Blocks
 ------------------------
 
     To create code blocks
@@ -197,7 +197,7 @@ CODE BLOCKS
 
 
 
-IMAGES
+Images
 ------------------------
 
     Images can be represented by
@@ -214,7 +214,7 @@ IMAGES
 
 
 
-BACKTICKS
+Backticks
 ------------------------
 
     Code can be designated by enclosing the word or phrase in `backticks`
@@ -227,7 +227,7 @@ BACKTICKS
 
 
 
-HORIZONTAL RULE
+Horizontal Rule
 ------------------------
 
     To create a horizontal rule use three or more asterisks, dashes, or underscores on a line as such
@@ -244,7 +244,7 @@ HORIZONTAL RULE
 
 
 
-LINKS
+Links
 ------------------------
 
     Links can be created using a similar syntax to [Images](https://clarkeriksson.com) except without the exclamation point.
@@ -267,7 +267,7 @@ LINKS
 
 
 
-REFERENCES
+References
 ------------------------
 
     References comprise of two parts. the first part is the [link][1] where the first portion is the highlighted text and the second points to the label of the reference
@@ -313,7 +313,7 @@ HTML
 
 
 
-ESCAPING CHARACTERS
+Escaping Characters
 ------------------------
 
     Use a backslash to escape characters that would usually be used to format the text
@@ -328,4 +328,116 @@ ESCAPING CHARACTERS
 >
 > \* This would just be text starting with an asterisk character
 
----
+
+
+Clarkdown Extended Syntax
+========================
+
+Header IDs (non-clarkdown origin)
+------------------------
+
+    Header IDs can be specified like so
+
+    ### Header Text {#header-id}
+
+    Headers with IDs can be linked to like so
+
+    [Header Link](#header-id)
+
+Tables (non-clarkdown origin)
+------------------------
+
+    To create a table use three or more hyphens to denote a column header and use pipes to separate columns
+
+    | Example 1 | Ex 2      |
+    | --------- | --------- |
+    | Value 1,1 | Value 1,2 |
+    | Value 3   | Value 4   |
+
+    Cell widths can vary, the result will be the same
+
+    | Example 1 | Ex 2 |
+    | --- | ------ |
+    | Value 1,1 | Value 1,2 |
+    | Value 3 | Value 4 |
+
+    Column text alignment can be set by adding a colon to the left, right or both sides of the hyphens in the header row
+
+    | Left | Middle | Right |
+    | :--- | :----: | ----: |
+    | Text | Text   | Text  |
+    | Text | Text   | Text  |
+
+    Column entries can include links, inline code (no blocks), and emphasis
+
+    Column entries cannot include headings, blockquotes, lists, horizontal rules, images, or HTML
+
+Fenced Code Blocks
+------------------------
+
+    By enclosing a block by lines of ``` or ~~~ you do not have to indent the content and it will still render as code
+
+    ```
+    {
+        first: "Clark"
+        middle: "W"
+        last: "Eriksson"
+    }
+    ```
+
+Footnotes
+------------------------
+
+    To create a footnote reference, add a caret and an identifier using numbers or words with no spaces or tabs  
+    In the output, footnotes are simply ordered and numbered sequentially, identifiers are used only in markdown
+
+    Example footnote.[^1]
+
+    Add the footnote itself by associating that identifier with some content as such
+
+    [^1]: This is some content
+    
+        Indent content on another line to include it in the footnote
+
+    Footnotes will all collect at the end of a document, no matter where the definition is added
+
+Definition Lists
+------------------------
+
+    To create a definition list type the term on a line, on the next line add a colon followed by a space and then the definition
+
+    Subsequently defined definitions will be included in the same list
+
+    First Term
+    : Definition 1 is here
+
+    Second Term
+    : Definition 2 is here
+
+Strikethrough
+------------------------
+
+    To strike through text, enclose it with two tilde symbols on each side
+
+    ~~This will have a line through it~~
+
+Highlight
+------------------------
+
+    To highlight text, enclose it with two equals symbols on each side
+
+    ==This will be highlighted==
+
+Subscript
+------------------------
+
+    To make text a subscript, enclose it with one tilde symbol on each side
+
+    H~2~O will have 2 as a subscript
+
+Superscript
+------------------------
+
+    To make text a superscript, enclose it with one caret symbol on each side
+
+    X^2^ will have 2 as a superscript
