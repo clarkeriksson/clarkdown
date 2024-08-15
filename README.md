@@ -237,7 +237,7 @@ HORIZONTAL RULE
     ___
 
 > To create a horizontal rule use three or more asterisks, dashes, or underscores on a line as such
-
+>
 > ***
 > ---
 > ___
