@@ -201,16 +201,16 @@ IMAGES
 ------------------------
 
     Images can be represented by
-    ![Image Name](/path/to/image.png)
+    ![Image Name](./public/images/farm.png)
 
     Links can be added to images by enclosing the image in square brackets and adding the link in parentheses
-    [![Linked Image](/path/to/image.png)](https://clarkeriksson.com)
+    [![Linked Image](./public/images/solarsystem.png)](https://clarkeriksson.com)
 
 > Images can be represented by  
-> ![Image Name](/path/to/image.png)
+> ![Image Name](./public/images/farm.png)
 >
 > Links can be added to images by enclosing the image in square brackets and adding the link in parentheses  
-> [![Linked Image](/path/to/image.png)](https://clarkeriksson.com)
+> [![Linked Image](./public/images/solarsystem.png)](https://clarkeriksson.com)
 
 
 
