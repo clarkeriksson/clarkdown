@@ -330,10 +330,10 @@ Escaping Characters
 
 
 
-Clarkdown Extended Syntax
+Extended Syntax
 ========================
 
-Header IDs (non-clarkdown origin)
+Header IDs
 ------------------------
 
     Header IDs can be specified like so
@@ -344,7 +344,7 @@ Header IDs (non-clarkdown origin)
 
     [Header Link](#header-id)
 
-Tables (non-clarkdown origin)
+Tables
 ------------------------
 
     To create a table use three or more hyphens to denote a column header and use pipes to separate columns
@@ -441,3 +441,6 @@ Superscript
     To make text a superscript, enclose it with one caret symbol on each side
 
     X^2^ will have 2 as a superscript
+
+Clarkdown Extended Syntax
+========================
